@@ -11,7 +11,8 @@ module.exports = {
         'gradient-x': 'gradient-x 15s ease infinite',
         'gradient-y': 'gradient-y 15s ease infinite',
         'gradient-xy': 'gradient-xy 15s ease infinite',
-        'glow': 'glow 15s ease-in-out infinite alternate',
+        'glow': 'glow 10s ease-in-out infinite alternate',
+        'glow-dark': 'glow-dark 10s ease-in-out infinite alternate',
       },
       'keyframes': {
         'gradient-y': {
@@ -48,7 +49,7 @@ module.exports = {
           '0%': {
             boxShadow: '0 0 60px 30px #fff, 0 0 70px 60px #eee, 0 0 110px 90px #fff',
           }
-        }
+        },
       },
     }
   },
