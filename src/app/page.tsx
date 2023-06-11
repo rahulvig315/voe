@@ -1,7 +1,7 @@
 'use client';
 import { LOGO_SOURCES } from '@/utilities/theme';
 import Image from 'next/image';
-import useTheme from './hooks/theme/themeHook';
+import useTheme from '../hooks/theme/themeHook';
 
 
 
