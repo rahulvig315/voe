@@ -11,7 +11,7 @@ module.exports = {
         'gradient-x': 'gradient-x 15s ease infinite',
         'gradient-y': 'gradient-y 15s ease infinite',
         'gradient-xy': 'gradient-xy 15s ease infinite',
-        'shadow-glow': 'glow 1s ease-in-out infinite',
+        'glow': 'glow 15s ease-in-out infinite alternate',
       },
       'keyframes': {
         'gradient-y': {
@@ -44,15 +44,12 @@ module.exports = {
             'background-position': 'right center'
           }
         },
-        glow: {
-          '0%, 100%': {
-            'box-shadow': 'var(boxShadow.["2xl"])'
-          },
-          '50%': {
-            'box-shadow': 'var(boxShadow.xl)'
+        'glow': {
+          '0%': {
+            boxShadow: '0 0 60px 30px #fff, 0 0 70px 60px #eee, 0 0 110px 90px #fff',
           }
         }
-      }
+      },
     }
   },
   plugins: [require('@tailwindcss/typography')],
