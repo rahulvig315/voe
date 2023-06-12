@@ -1,10 +1,11 @@
+"use client";
 import { Themes, getDarkModeQuery } from "@/utilities/theme";
 import { useEffect, useState } from "react";
 
 type Props = {}
 
 const useTheme = (): { theme: Themes } => {
-    const [theme, setTheme] = useState(() => getDarkModeQuery().matches ? Themes.DARK : Themes.LIGHT);
+    const [theme, setTheme] = useState(() => getDarkModeQuery()?.matches ? Themes.DARK : Themes.LIGHT);
 
     useEffect(() => {
         let darkModeMediaQuery = getDarkModeQuery();
