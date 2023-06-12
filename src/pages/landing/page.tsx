@@ -1,9 +1,12 @@
 "use client"
 import useTheme from '@/hooks/theme/themeHook';
-import { htmlAccessibilityMeta, styles } from '@/styles/tailwind/landing';
 import { LOGO_SOURCES } from '@/utilities/theme';
 import Image from 'next/image';
+import { htmlAccessibilityMeta, styles } from './styles';
 
+
+
+// TODO: Extrapolate HTML Content for easier editing of content. 
 export default function Landing() {
     const { theme } = useTheme();
     return (
@@ -17,6 +20,7 @@ export default function Landing() {
                     className={styles.header.img.classes}
                     height={styles.header.img.size}
                     width={styles.header.img.size}
+                    placeholder='empty'
                     alt={htmlAccessibilityMeta.img.alt}
                 />
             </header>
@@ -24,39 +28,43 @@ export default function Landing() {
             <br />
             <section className={styles.section.classes}>
                 <div className={styles.section.content}>
-                    <h3 className={styles.section.h1}>
-                        INTRODUCING
-                        <span className={`${styles.shared.shortNameTitle}`}>
-                            &nbsp;VOE
-                        </span>
-                    </h3>
                     <hr className={styles.shared.hr} />
-                    <div className={styles.section.p}>
+                    <h1 className={styles.section.h1}>
+                        Introducing
+                        <span className={`${styles.shared.shortNameTitle}`}>
+                            &nbsp;VOE&nbsp;
+                        </span>
+                    </h1>
+                    <hr className={styles.shared.hr} />
+                    <div className={styles.section.h4}>
                         <p>
                             Experience the power of humanity&apos;s collective wisdom with <span className={styles.shared.shortName}>
                                 VOE
                             </span>
                         </p>
                         <p>
-                            Built on the principles of ancient Athenian democracy,
+                            Influenced by the society structure of Ancient Athens,
                             <br />
                             <span className={styles.shared.shortName}>
                                 VOE&nbsp;
-                            </span> is a modern-day Agora －
-                            <br />
-                            A virtual gathering place for discussing and resolving the vast array of issues related to the human experience. It&apos;s not just an app, but a movement aiming to transform society by promoting introspection and encouraging active participation in collective problem-solving.
+                            </span> is a modern-day Agora.
                         </p>
-
+                        <p>
+                            Primarily,
+                            <span className={styles.shared.shortName}>
+                                &nbsp;VOE&nbsp;
+                            </span> is a societal and self improvement platform that delves deeply into the entire realm of conflicts plaguing our existence. It&apos;s not just an app, but a movement aiming to transform society by promoting introspection and encouraging active participation in collective problem-solving.
+                        </p>
                         <p>
                             <span className={styles.shared.shortName}>
                                 &nbsp;&nbsp;VOE&nbsp;&nbsp;
-                            </span>is on a mission to advance humanity, reduce conflicts across all scopes of reality, improve the quality of our personal lives and ultimately be a harbinger of peace on Earth.
+                            </span>has a mission to advance humanity, reduce conflicts across all scopes of reality, improve the quality of our personal lives and ultimately be a harbinger of peace on Earth.
                         </p>
 
                     </div>
 
                     <hr className={styles.shared.hr} />
-                    <h4 className={styles.section.h4}>
+                    <h4 className={styles.section.h3}>
                         Get started by logging in or registering below.
                     </h4>
                 </div>
