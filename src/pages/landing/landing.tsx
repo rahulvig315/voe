@@ -6,7 +6,7 @@ import { htmlAccessibilityMeta, styles } from './styles';
 
 
 
-// TODO: Extrapolate HTML Content for easier editing of content. 
+// TODO: Extrapolate HTML Content for easier editing of content.
 export default function Landing() {
     const { theme } = useTheme();
     return (
@@ -15,14 +15,15 @@ export default function Landing() {
                 <h1 className={styles.header.h1.classes}>
                     VOICES OF EARTH
                 </h1>
-                <Image
-                    src={LOGO_SOURCES?.[theme]}
-                    className={styles.header.img.classes}
-                    height={styles.header.img.size}
-                    width={styles.header.img.size}
-                    placeholder='empty'
-                    alt={htmlAccessibilityMeta.img.alt}
-                />
+
+                {LOGO_SOURCES?.[theme] &&
+                    <Image src={LOGO_SOURCES?.[theme]}
+                        className={styles.header.img.classes}
+                        height={styles.header.img.size}
+                        width={styles.header.img.size}
+                        alt={htmlAccessibilityMeta.img.alt}
+                    />}
+
             </header>
 
             <br />
