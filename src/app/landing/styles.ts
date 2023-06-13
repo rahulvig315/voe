@@ -8,7 +8,7 @@ export const styles = {
             classes: 'text-4xl sm:text-5xl md:text-7xl font-serif font-extrabold text-center sm:mb-5 drop-shadow-lg shadow-black dark:shadow-white',
         },
         img: {
-            classes: 'rounded-full',
+            classes: 'rounded-full animate-glow',
             size: 700
         },
 
@@ -30,7 +30,6 @@ export const styles = {
         shortNameTitle: 'text-neutral-700 dark:text-neutral-400 font-bold text-4xl tracking-tighter drop-shadow-lg shadow-white dark:shadow-black',
         shortName: 'text-neutral-700 dark:text-neutral-400 font-bold text-xl tracking-tighter drop-shadow-lg shadow-white dark:shadow-black ',
         hr: 'border-black dark:border-white'
-
     }
 }
 

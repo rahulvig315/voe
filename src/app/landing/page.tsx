@@ -3,19 +3,20 @@ import useTheme from '@/hooks/theme/themeHook';
 import { LOGO_SOURCES } from '@/utilities/theme';
 import Image from 'next/image';
 import { htmlAccessibilityMeta, styles } from './styles';
+import Link from 'next/link';
 
 
 
 // TODO: Extrapolate HTML Content for easier editing of content.
-export default function Landing() {
+export default function Page() {
     const { theme } = useTheme();
     return (
         <main className={styles.main.classes} >
+            {/* TODO: Add Animations to make initial content paint nicer */}
             <header className={styles.header.classes}>
                 <h1 className={styles.header.h1.classes}>
                     VOICES OF EARTH
                 </h1>
-
                 {LOGO_SOURCES?.[theme] &&
                     <Image src={LOGO_SOURCES?.[theme]}
                         className={styles.header.img.classes}
@@ -74,7 +75,7 @@ export default function Landing() {
                         Register
                     </button>
                     <button className={styles.section.secondaryBtn}>
-                        Login
+                        <Link href="/api/auth/login">Login</Link>
                     </button>
                 </div>
 
