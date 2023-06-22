@@ -4,13 +4,25 @@ import { LOGO_SOURCES } from '@/utilities/theme';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { htmlAccessibilityMeta, styles, getAppAcronym } from './styles';
+import { useUser } from '@auth0/nextjs-auth0/client';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+import { styles } from './styles';
+import { getAppAcronym, getLogo } from '@/utilities/assets';
+import { userAuthBtnLink } from './constants';
 
-
-
-// TODO: Extrapolate HTML Content for easier editing of content.
 export default function Page() {
     const { theme } = useTheme();
+    const { push } = useRouter();
+    const {user} = useUser();
+
+    useEffect(() => {
+        if (user) {
+            push('/app/dashboard');
+        }
+    }, [user, push])
+
+
     return (
         <main className={styles.main.classes} >
             {/* TODO: Add Animations to make initial content paint nicer */}
@@ -18,14 +30,7 @@ export default function Page() {
                 <h1 className={styles.header.h1.classes}>
                     VOICES OF EARTH
                 </h1>
-                {LOGO_SOURCES?.[theme] &&
-                    <Image src={LOGO_SOURCES?.[theme]}
-                        className={styles.header.img.classes}
-                        height={styles.header.img.size}
-                        width={styles.header.img.size}
-                        alt={htmlAccessibilityMeta.img.alt}
-                    />}
-
+                {getLogo({styles: styles.header.img.classes, theme, width: styles.header.img.size, height: styles.header.img.size})}
             </header>
 
             <br />
@@ -60,7 +65,7 @@ export default function Page() {
                 <div className={styles.section.btnDiv}>
                     <Link
                         className={styles.section.primaryBtn}
-                        href="/api/auth/login"
+                        href={userAuthBtnLink}
                     >
                         Register or Login
                     </Link>

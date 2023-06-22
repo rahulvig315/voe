@@ -1,0 +1,1 @@
+export const userAuthBtnLink = "/api/auth/login";
