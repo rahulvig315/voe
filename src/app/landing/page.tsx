@@ -1,15 +1,13 @@
 "use client"
 import useTheme from '@/hooks/theme/themeHook';
-import { LOGO_SOURCES } from '@/utilities/theme';
-import Image from 'next/image';
 import Link from 'next/link';
 
+import { getAppAcronym, getLogo } from '@/utilities/assets';
 import { useUser } from '@auth0/nextjs-auth0/client';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { styles } from './styles';
-import { getAppAcronym, getLogo } from '@/utilities/assets';
 import { userAuthBtnLink } from './constants';
+import { styles } from './styles';
 
 export default function Page() {
     const { theme } = useTheme();

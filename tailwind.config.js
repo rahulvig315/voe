@@ -13,7 +13,7 @@ module.exports = {
         'gradient-xy': 'gradient-xy 15s ease infinite',
         'glow': 'glow 10s ease-in-out infinite alternate',
         'glow-fade': 'fadeUp 5s ease glow-dark 10s ease-in-out infinite alternate',
-        'fadeUp': 'fadeUp 10s ease-in-out',
+        'fadeInLeft': 'fadeInLeft 10s ease-in-out',
       },
       'keyframes': {
         'gradient-y': {
@@ -51,14 +51,14 @@ module.exports = {
             boxShadow: '0 0 60px 30px #fff, 0 0 70px 60px #eee, 0 0 110px 90px #fff',
           }
         },
-        'fadeUp': {
+        'fadeInLeft': {
           '0%': {
-            'opacity': '0',
-            'transform': 'translateY(1000px)'
+            'opacity': '0.5',
+            'transform': 'translateX(1000px)'
           },
           '100%': {
             'opacity': '1',
-            'transform': 'translateY(0)',
+            'transform': 'translateX(0)',
           }
 
         }
