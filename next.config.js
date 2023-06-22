@@ -3,10 +3,15 @@ const nextConfig = {
     async redirects() {
         return [
             {
-                source: '/r/:realm',
-                destination: '/realm/:realm',
+                source: 'app/agoras/r/:realm',
+                destination: 'app/agoras/realm/:realm',
                 permanent: true,
             },
+            {
+                source: '/app',
+                destination: '/app/dashboard',
+                permanent: true,
+            }
         ];
     },
 }
