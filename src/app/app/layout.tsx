@@ -36,18 +36,18 @@ export default function DashboardLayout({
 
 
     return (
-        <main className="bg-white h-screen dark:bg-zinc-800 ">
+        <main className="bg-white h-screen w-screen dark:bg-zinc-800 overflow-y-auto overflow-x-hidden">
             {user && (<>
-                <nav className="flex w-screen bg-gradient-to-b dark:from-zinc-950 dark:to-zinc-700 from-neutral-300 to-neutral-100 animate-gradient-y shadow-2xl shadow-black h-fit justify-start p-5 sticky top-0 z-50 align-middle items-center gap-10 rounded-b-x">
+                <nav className="flex w-screen bg-gradient-to-b dark:from-zinc-950 dark:to-zinc-700 from-neutral-300 to-neutral-100 animate-gradient-y shadow-2xl shadow-zinc-700 h-fit justify-start p-6 fixed top-0 z-50 align-middle items-center gap-10 rounded-b-x">
                     <Link href="/app" className="flex gap-3 flex-shrink items-center"><i>   {getLogo({width: 50, height: 50, theme, styles: 'rounded-full'})}</i><span className='text-neutral-700 dark:text-neutral-400 font-bold text-xl tracking-tighter drop-shadow-lg shadow-white dark:shadow-black'>VOE</span></Link>
-                    <input type="text" className="p-2 mx-3 rounded-lg flex-grow self-center dark:text-black text-white bg-zinc-800 dark:bg-neutral-200" placeholder="Search Voices of Earth"/>
+                    <input type="text" className="p-2 mx-3 rounded-lg flex-grow self-center dark:text-black text-white bg-zinc-100 dark:bg-zinc-700" placeholder="Search Voices of Earth"/>
                     <Link href="/api/settings" className="flex-shrink"><i className="">
                     <WrenchScrewdriverIcon className="h-6 w-6 text-black dark:text-white" /> </i> </Link>
                     <Link href="/api/auth/logout" className="flex-shrink"> <ArrowRightOnRectangleIcon className="h-6 w-6 text-black dark:text-white"/> </Link>
                 </nav>
 
 
-                <aside className="h-screen  rounded-tr-xl rounded-br-xl bg-gradient-to-b dark:from-zinc-950 dark:to-zinc-700 from-neutral-300 to-neutral-100 animate-gradient-y shadow-2xl shadow-black dark:shadow-white px-10 mt-3 fixed flex flex-col justify-start pt-10 z-50">
+                <aside className="h-screen  rounded-tr-xl rounded-br-xl bg-gradient-to-b dark:from-zinc-950 dark:to-zinc-700 from-neutral-300 to-neutral-100 animate-gradient-y shadow-2xl shadow-black dark:shadow-white px-10 mt-28 fixed flex flex-col justify-start pt-20 z-50 pr-20">
 
                     <h1 className="text-3xl my-5 font-bold">Explore</h1>
                     <ul className="flex flex-col text-xl font-light gap-3">
@@ -58,7 +58,7 @@ export default function DashboardLayout({
                         <li><Link href={"/app/news"}>News</Link></li>
                     </ul>
                 </aside>
-                <section className="mx-64 my-20 px-32 bg-zinc-70 ">
+                <section className="w-screen flex py-20 px-64 bg-zinc-70 bg-neutral-100 dark:bg-neutral-700 flex justify-center shadow-2xl rounded-b-xl shadow-neutral-500 ml-40 mt-16">
                 <Suspense fallback={<Loading />}>
                     {user && children}
                 </Suspense>
