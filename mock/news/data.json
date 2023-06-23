@@ -3,46 +3,6 @@
     "totalResults": 124958,
     "results": [
         {
-            "title": "Act promises to scrap regulations for farmers",
-            "link": "https://www.nbr.co.nz/politics/act-promises-to-scrap-regulations-for-farmers/",
-            "keywords": null,
-            "creator": null,
-            "video_url": null,
-            "description": "‘They’ve had to put up with an avalanche of regulation and red tape.’",
-            "content": "The Act Party has released its agriculture policy at Fieldays in Mystery Creek, largely a repeat of earlier announcements. It has confirmed it would scrap the Zero Carbon Act and tie any emissions price to that of New Zealand’s five main trading partners, with the caveat that, if farmers in other",
-            "pubDate": "2023-06-15 00:39:50",
-            "image_url": null,
-            "source_id": "nbr",
-            "category": [
-                "politics"
-            ],
-            "country": [
-                "new zealand"
-            ],
-            "language": "english"
-        },
-        {
-            "title": "Tigers at Twins series preview",
-            "link": "https://www.startribune.com/twins-tigers-series-preview-cabrera-correa-buxton-sonny-gray-joe-ryan/600282731/",
-            "keywords": null,
-            "creator": [
-                "Joel Rippel"
-            ],
-            "video_url": null,
-            "description": null,
-            "content": "Four-game series at Target Field All games on BSN, 830-AM and 102.9-FM Thursday, 6:10 p.m.: LHP Matthew Boyd (3-5, 5.55 ERA) vs. RHP Sonny Gray (4-1, 2.25) Friday, 7:10 p.m.: TBA vs. RHP Joe Ryan (7-3, 2.90) Saturday, 1:10 p.m.: LHP Joey Wentz (1-6, 7.23 ERA) vs. TBA Sunday, 1:10 p.m.: TBA vs. RHP Louie Varland (3-2, 4.70) Tigers update: Detroit played its fourth doubleheader of the season — the most in the majors — on Wednesday. It was swept by Atlanta and has now lost 11 of its past 12. ... The Tigers, who were 16-11 in May, opened June with nine consecutive losses. ... Miguel Cabrera hit his first home run of the season in Wednesday's first game. It was the 508th of his career. ... Former Twins prospect Akil Baddoo (right quad strain) was placed on the injured list on Saturday. ... RHP Beau Brieske, who is on the 60-day injured list, is on a rehab assignment with Class AAA Toledo. Twins update: They face their AL Central rivals for the first time this season. ... Bailey Ober's quality start in the Twins' 4-2 victory over Milwaukee on Wednesday was the 34th quality start by a Twins starter this season. The Twins had 35 last season. ... Carlos Correa has a seven-game hitting streak to raise his batting average to .218. During the hitting streak he is 8-for-24 with three home runs and 10 RBI. ... The Twins were 11-8 against the Tigers last season — 7-2 at Target Field — have won the season series the past six seasons.",
-            "pubDate": "2023-06-15 00:39:24",
-            "image_url": null,
-            "source_id": "startribune",
-            "category": [
-                "top"
-            ],
-            "country": [
-                "united states of america"
-            ],
-            "language": "english"
-        },
-        {
             "title": "Fed pauses interest rate hikes but signals more tightening ahead",
             "link": "https://koreatimes.co.kr/www/nation/2023/06/488_352988.html?utm_source=fl",
             "keywords": null,
@@ -81,6 +41,46 @@
             ],
             "country": [
                 "south korea"
+            ],
+            "language": "english"
+        },
+        {
+            "title": "Act promises to scrap regulations for farmers",
+            "link": "https://www.nbr.co.nz/politics/act-promises-to-scrap-regulations-for-farmers/",
+            "keywords": null,
+            "creator": null,
+            "video_url": null,
+            "description": "‘They’ve had to put up with an avalanche of regulation and red tape.’",
+            "content": "The Act Party has released its agriculture policy at Fieldays in Mystery Creek, largely a repeat of earlier announcements. It has confirmed it would scrap the Zero Carbon Act and tie any emissions price to that of New Zealand’s five main trading partners, with the caveat that, if farmers in other",
+            "pubDate": "2023-06-15 00:39:50",
+            "image_url": null,
+            "source_id": "nbr",
+            "category": [
+                "politics"
+            ],
+            "country": [
+                "new zealand"
+            ],
+            "language": "english"
+        },
+        {
+            "title": "Tigers at Twins series preview",
+            "link": "https://www.startribune.com/twins-tigers-series-preview-cabrera-correa-buxton-sonny-gray-joe-ryan/600282731/",
+            "keywords": null,
+            "creator": [
+                "Joel Rippel"
+            ],
+            "video_url": null,
+            "description": null,
+            "content": "Four-game series at Target Field All games on BSN, 830-AM and 102.9-FM Thursday, 6:10 p.m.: LHP Matthew Boyd (3-5, 5.55 ERA) vs. RHP Sonny Gray (4-1, 2.25) Friday, 7:10 p.m.: TBA vs. RHP Joe Ryan (7-3, 2.90) Saturday, 1:10 p.m.: LHP Joey Wentz (1-6, 7.23 ERA) vs. TBA Sunday, 1:10 p.m.: TBA vs. RHP Louie Varland (3-2, 4.70) Tigers update: Detroit played its fourth doubleheader of the season — the most in the majors — on Wednesday. It was swept by Atlanta and has now lost 11 of its past 12. ... The Tigers, who were 16-11 in May, opened June with nine consecutive losses. ... Miguel Cabrera hit his first home run of the season in Wednesday's first game. It was the 508th of his career. ... Former Twins prospect Akil Baddoo (right quad strain) was placed on the injured list on Saturday. ... RHP Beau Brieske, who is on the 60-day injured list, is on a rehab assignment with Class AAA Toledo. Twins update: They face their AL Central rivals for the first time this season. ... Bailey Ober's quality start in the Twins' 4-2 victory over Milwaukee on Wednesday was the 34th quality start by a Twins starter this season. The Twins had 35 last season. ... Carlos Correa has a seven-game hitting streak to raise his batting average to .218. During the hitting streak he is 8-for-24 with three home runs and 10 RBI. ... The Twins were 11-8 against the Tigers last season — 7-2 at Target Field — have won the season series the past six seasons.",
+            "pubDate": "2023-06-15 00:39:24",
+            "image_url": null,
+            "source_id": "startribune",
+            "category": [
+                "top"
+            ],
+            "country": [
+                "united states of america"
             ],
             "language": "english"
         },
