@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -48,7 +49,7 @@ module.exports = {
         },
         'glow': {
           '0%': {
-            boxShadow: '0 0 60px 30px #fff, 0 0 70px 60px #eee, 0 0 110px 90px #fff',
+            boxShadow: '0 0 60px 30px #fff, 0 0 100px 60px #eee, 0 0 110px 90px #fff',
           }
         },
         'fadeInLeft': {
@@ -66,5 +67,7 @@ module.exports = {
 
     }
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/line-clamp'), plugin(function ({ addVariant }) {
+    addVariant('current', '&.active')
+  })],
 }
