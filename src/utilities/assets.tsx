@@ -9,7 +9,7 @@ export const htmlAccessibilityMeta = {
 
 export const getAppAcronym = (style: string) => (
     <span className={style}>
-        &nbsp;VOE&nbsp;
+       VOE&nbsp;
     </span>
 );
 
