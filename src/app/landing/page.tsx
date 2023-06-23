@@ -34,7 +34,6 @@ export default function Page() {
             <br />
             <section className={styles.section.classes}>
                 <div className={styles.section.content}>
-                    <hr className={styles.shared.hr} />
                     <h1 className={styles.section.h1}>
                         Introducing {getAppAcronym(styles.shared.acronymTitle)}
                     </h1>
